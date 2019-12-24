@@ -1,0 +1,45 @@
+//
+//  FromURL.swift
+//  NTS
+//
+//  Created by Ashish Awasthi on 20/03/19.
+//  Copyright © 2019 NTS. All rights reserved.
+//
+import Foundation
+
+internal enum RequestInviromentBaseURL: Int {
+    case eDev = 0 /* Development url which will for develment request*/
+    case eQA
+    case eProd
+}
+
+extension RequestInviromentBaseURL: CaseIterable {
+    
+    internal func prettyURL(module: RequestServiceModuleType) -> String {
+        switch module {
+        case .eBase:
+            switch self {
+            case .eDev: return "https://jsonplaceholder.typicode.com/photos"
+            case .eQA:  return "https://jsonplaceholder.typicode.com/photos"
+            case .eProd: return "https://jsonplaceholder.typicode.com/photos"
+            }
+        case .ePhotos:
+            switch self {
+            case .eDev: return "https://jsonplaceholder.typicode.com/photos"
+            case .eQA:  return "https://jsonplaceholder.typicode.com/photos"
+            case .eProd: return "https://jsonplaceholder.typicode.com/photos"
+            }
+        case .ePlaces:
+            switch self {
+            case .eDev: return "https://dl.dropboxusercontent.com/"
+            case .eQA:  return "https://dl.dropboxusercontent.com/"
+            case .eProd: return "https://dl.dropboxusercontent.com/"
+            }
+        }
+        
+    }
+}
+
+extension RequestInviromentBaseURL {
+ public static var requestInvBaseURL: RequestInviromentBaseURL = .eDev
+}
