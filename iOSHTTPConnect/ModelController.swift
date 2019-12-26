@@ -18,6 +18,7 @@ public class ModelController {
 extension ModelController {
     
     public func processRequest<JSONElement: Decodable>(requestForm: RequestForm, jsonObjType: JSONElement.Type, completeRequest: @escaping (_ result: Result<[String: Any]>) -> Void) {
+        FSFrameworkVersion()
         let genericOperation = GenericOperation.init(requestForm: requestForm)
         self.operationQueue.addOperations([genericOperation], waitUntilFinished: false)
         genericOperation.completionBlock = {

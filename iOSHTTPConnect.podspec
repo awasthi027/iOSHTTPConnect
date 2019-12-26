@@ -8,7 +8,7 @@ s.summary = "This library will helpful to communicate with server."
 s.requires_arc = true
 
 # 2
-s.version = "0.0.2"
+s.version = "0.0.3"
 
 # 3
   s.license = { :type => 'Copyright', :text => 'Created and licensed by Ashish Awasthi. Copyright 2019 Ashish Awasthi. All rights reserved.' }
