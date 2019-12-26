@@ -35,6 +35,12 @@ extension RequestInviromentBaseURL: CaseIterable {
             case .eQA:  return "https://dl.dropboxusercontent.com/"
             case .eProd: return "https://dl.dropboxusercontent.com/"
             }
+            case .eMyAccount:
+            switch self {
+            case .eDev: return "https://test-api.nevaventures.com/"
+            case .eQA:  return "https://test-api.nevaventures.com/"
+            case .eProd: return "https://test-api.nevaventures.com/"
+            }
         }
         
     }

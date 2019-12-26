@@ -10,13 +10,6 @@ import Foundation
 private let ContentType = "Content-Type"
 private let ContentTypeValue = "application/json"
 
-internal enum RequestMenthoType: String {
-    case ePost = "POST"
-    case ePatch = "PATCH"
-    case eDelete = "DELETE"
-    case eGet = "GET"
-    case ePut = "PUT"
-}
 
 public let kRespData = "data"
 public let KRespJson = "json"
@@ -26,17 +19,16 @@ public let kResponse = "response"
 class BaseModule {
     
     internal func processRequest(requestForm: RequestForm, completeRequest: @escaping (_ result: Result<Data>) -> Void)  {
-        
     }
     
-    internal func requestForData(fromUrl url: String, withMethod methodName: RequestMenthoType, successHandler: @escaping(_ data: Data?, _ error: Error?)->Void)  {
+    internal func requestForData(fromUrl url: String, withMethod methodName: String, successHandler: @escaping(_ data: Data?, _ error: Error?)->Void)  {
         //Implementing URLSession
         guard let url = URL(string: url) else { return }
         //var header = self.headers
         let defaultSession = URLSession(configuration: .ephemeral)
         var request = URLRequest(url: url)
         request.addValue(ContentTypeValue, forHTTPHeaderField: ContentType)
-        request.addValue(ContentTypeValue, forHTTPHeaderField: ContentType)
+        request.httpMethod = methodName
         defaultSession.dataTask(with: request) { (data, response, error) in
             if let errorItem = error {
                 FSLogError(errorItem.localizedDescription)

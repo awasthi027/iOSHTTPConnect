@@ -14,6 +14,7 @@ public enum APIRequestType: Int {
     case ePhotoList
     case ePhotoDetails
     case ePlaceList
+    case eUsersList
     case eUnknown
 }
 
@@ -30,6 +31,7 @@ extension APIRequestType {
         case .eLogin: return "loginInfo/data"
         case .eSignUp: return "signUp/data"
         case .ePlaceList: return "s/2iodh4vg0eortkl/facts.json"
+        case .eUsersList: return "userInfo/data"
         case .eUnknown: return ""
             
       }

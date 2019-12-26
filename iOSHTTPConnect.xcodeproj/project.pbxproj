@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB1C3C9023B48B7700AE370E /* MyAccountModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1C3C8F23B48B7700AE370E /* MyAccountModule.swift */; };
+		CB1C3C9223B493F600AE370E /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1C3C9123B493F600AE370E /* RequestMethod.swift */; };
 		CBAB96BB23B280EB000ADCF4 /* iOSHTTPConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBAB96B123B280EB000ADCF4 /* iOSHTTPConnect.framework */; };
 		CBAB96C023B280EB000ADCF4 /* iOSHTTPConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB96BF23B280EB000ADCF4 /* iOSHTTPConnectTests.swift */; };
 		CBAB96C223B280EB000ADCF4 /* iOSHTTPConnect.h in Headers */ = {isa = PBXBuildFile; fileRef = CBAB96B423B280EB000ADCF4 /* iOSHTTPConnect.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB1C3C8F23B48B7700AE370E /* MyAccountModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountModule.swift; sourceTree = "<group>"; };
+		CB1C3C9123B493F600AE370E /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
 		CBAB96B123B280EB000ADCF4 /* iOSHTTPConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSHTTPConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAB96B423B280EB000ADCF4 /* iOSHTTPConnect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSHTTPConnect.h; sourceTree = "<group>"; };
 		CBAB96B523B280EB000ADCF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,10 +112,12 @@
 				CBAB96D023B2812A000ADCF4 /* ModelController.swift */,
 				CBAB96D423B2812A000ADCF4 /* PhotoModule.swift */,
 				CBAB96D123B2812A000ADCF4 /* PlaceModule.swift */,
+				CB1C3C8F23B48B7700AE370E /* MyAccountModule.swift */,
 				CBAB96D623B2812A000ADCF4 /* RequestForm.swift */,
 				CBAB96D523B2812A000ADCF4 /* Result.swift */,
 				CBAB96B423B280EB000ADCF4 /* iOSHTTPConnect.h */,
 				CBAB96B523B280EB000ADCF4 /* Info.plist */,
+				CB1C3C9123B493F600AE370E /* RequestMethod.swift */,
 			);
 			path = iOSHTTPConnect;
 			sourceTree = "<group>";
@@ -246,7 +252,9 @@
 				CBAB96DB23B2812A000ADCF4 /* GenericOperation.swift in Sources */,
 				CBAB96E423B2812A000ADCF4 /* BaseOperation.swift in Sources */,
 				CBAB96E023B2812A000ADCF4 /* FactoryModel.swift in Sources */,
+				CB1C3C9023B48B7700AE370E /* MyAccountModule.swift in Sources */,
 				CBAB96DF23B2812A000ADCF4 /* FormURL.swift in Sources */,
+				CB1C3C9223B493F600AE370E /* RequestMethod.swift in Sources */,
 				CBAB96E223B2812A000ADCF4 /* Result.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
