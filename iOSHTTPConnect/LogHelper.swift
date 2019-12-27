@@ -76,8 +76,9 @@ internal func FSLogError(_ message: String, file: String = #file, function: Stri
 internal func FSFrameworkVersion() {
     let d = FSLoggerDate.dateNow()
     #if DEBUG
-      print("\(d) \(frameworkName) : 📒 \(frameworkVersion)")
+      print("\(d) \(frameworkName) :  📘 \(frameworkVersion)")
     #else
-        print("\(d) Info \(frameworkVersion)")
+        print("\(d) \(frameworkName) Info \(frameworkVersion)")
     #endif
 }
+

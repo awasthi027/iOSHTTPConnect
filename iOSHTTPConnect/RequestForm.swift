@@ -14,7 +14,7 @@ public struct RequestForm {
    public var requestAPI: APIRequestType = .eUnknown
    public var postDict: [String : Any] = [:]
    public var methodType: RequestMethodType = .eGet
-   public init(with service: RequestServiceModuleType = .eBase, api: APIRequestType = .eUnknown, postParam: [String : Any], methodType: RequestMethodType = .eGet) {
+   public init(with service: RequestServiceModuleType = .eBase, api: APIRequestType = .eUnknown, postParam: [String : Any] = [:], methodType: RequestMethodType = .eGet) {
         self.requestService = service
         self.requestAPI = api
         self.postDict = postParam
