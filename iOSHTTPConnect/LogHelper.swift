@@ -8,7 +8,7 @@
 
 import Foundation
 
-let frameworkVersion = "0.0.3"
+let frameworkVersion = "0.0.5"
 let frameworkName = "iOSHTTPConnect"
 
 internal func pretty_print(_ message: String, file: String = #file, function: String = #function, line: Int = #line) {
