@@ -1,0 +1,16 @@
+PODS:
+  - iOSReachability (0.0.3)
+
+DEPENDENCIES:
+  - iOSReachability (~> 0.0.3)
+
+SPEC REPOS:
+  trunk:
+    - iOSReachability
+
+SPEC CHECKSUMS:
+  iOSReachability: 8907cc7263f152c3ea3e19a8257adcafbcd377e0
+
+PODFILE CHECKSUM: 0b27d4ef699e92f09d53efc6077710065668eeeb
+
+COCOAPODS: 1.8.4

@@ -29,7 +29,7 @@ s.source       = { :git => "https://github.com/awasthi027/iOSHTTPConnect.git", :
 
 #s.framework = "UIKit"
 
-s.dependency "iOSReachability", "~> 0.0.3"
+s.dependency "iOSReachability", "~> 0.0.2"
 
 # 8
 s.source_files = "iOSHTTPConnect/**/*.{swift}"

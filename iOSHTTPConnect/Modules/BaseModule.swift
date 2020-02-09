@@ -24,6 +24,7 @@ class BaseModule {
             ReachabilityManager.shared.displayInternetStatus()
             return
         }
+        completeRequest(.success(Data()))
     }
     
     internal func requestForData(fromUrl url: String, withMethod methodName: String, successHandler: @escaping(_ data: Data?, _ error: Error?)->Void)  {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		856417A48C888F974CD2F546 /* Pods_iOSHTTPConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704BFFD86D61AEC31EDB252C /* Pods_iOSHTTPConnect.framework */; };
 		CB1C3C9223B493F600AE370E /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1C3C9123B493F600AE370E /* RequestMethod.swift */; };
 		CB74059923EF08EA00250881 /* PhotoModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74059423EF08EA00250881 /* PhotoModule.swift */; };
 		CB74059A23EF08EA00250881 /* MovieInfoModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74059523EF08EA00250881 /* MovieInfoModule.swift */; };
@@ -26,6 +27,7 @@
 		CBAB96E223B2812A000ADCF4 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB96D523B2812A000ADCF4 /* Result.swift */; };
 		CBAB96E323B2812A000ADCF4 /* RequestForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB96D623B2812A000ADCF4 /* RequestForm.swift */; };
 		CBAB96E423B2812A000ADCF4 /* BaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB96D723B2812A000ADCF4 /* BaseOperation.swift */; };
+		F5042D651DD57AE5604A9040 /* Pods_iOSHTTPConnect_iOSHTTPConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BECD81852EC45FE1A3B3DEF2 /* Pods_iOSHTTPConnect_iOSHTTPConnectTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2404479EBC7A8934AAAE9BE7 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSHTTPConnect-iOSHTTPConnectTests.debug.xcconfig"; path = "Target Support Files/Pods-iOSHTTPConnect-iOSHTTPConnectTests/Pods-iOSHTTPConnect-iOSHTTPConnectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		457ECB31AB82C5E547B446A2 /* Pods-iOSHTTPConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSHTTPConnect.debug.xcconfig"; path = "Target Support Files/Pods-iOSHTTPConnect/Pods-iOSHTTPConnect.debug.xcconfig"; sourceTree = "<group>"; };
+		704BFFD86D61AEC31EDB252C /* Pods_iOSHTTPConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSHTTPConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BECD81852EC45FE1A3B3DEF2 /* Pods_iOSHTTPConnect_iOSHTTPConnectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSHTTPConnect_iOSHTTPConnectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB1C3C9123B493F600AE370E /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
 		CB74059423EF08EA00250881 /* PhotoModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoModule.swift; sourceTree = "<group>"; };
 		CB74059523EF08EA00250881 /* MovieInfoModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieInfoModule.swift; sourceTree = "<group>"; };
@@ -61,6 +67,8 @@
 		CBAB96D523B2812A000ADCF4 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		CBAB96D623B2812A000ADCF4 /* RequestForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestForm.swift; sourceTree = "<group>"; };
 		CBAB96D723B2812A000ADCF4 /* BaseOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseOperation.swift; sourceTree = "<group>"; };
+		E7ED318EB47C1633305DEB8D /* Pods-iOSHTTPConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSHTTPConnect.release.xcconfig"; path = "Target Support Files/Pods-iOSHTTPConnect/Pods-iOSHTTPConnect.release.xcconfig"; sourceTree = "<group>"; };
+		F21FF7A558D2B7D051FEB26E /* Pods-iOSHTTPConnect-iOSHTTPConnectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSHTTPConnect-iOSHTTPConnectTests.release.xcconfig"; path = "Target Support Files/Pods-iOSHTTPConnect-iOSHTTPConnectTests/Pods-iOSHTTPConnect-iOSHTTPConnectTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				856417A48C888F974CD2F546 /* Pods_iOSHTTPConnect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +85,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBAB96BB23B280EB000ADCF4 /* iOSHTTPConnect.framework in Frameworks */,
+				F5042D651DD57AE5604A9040 /* Pods_iOSHTTPConnect_iOSHTTPConnectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A04C0C74A6E538282DA1F6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				457ECB31AB82C5E547B446A2 /* Pods-iOSHTTPConnect.debug.xcconfig */,
+				E7ED318EB47C1633305DEB8D /* Pods-iOSHTTPConnect.release.xcconfig */,
+				2404479EBC7A8934AAAE9BE7 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests.debug.xcconfig */,
+				F21FF7A558D2B7D051FEB26E /* Pods-iOSHTTPConnect-iOSHTTPConnectTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CB74059323EF08EA00250881 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +122,8 @@
 				CBAB96B323B280EB000ADCF4 /* iOSHTTPConnect */,
 				CBAB96BE23B280EB000ADCF4 /* iOSHTTPConnectTests */,
 				CBAB96B223B280EB000ADCF4 /* Products */,
+				5A04C0C74A6E538282DA1F6B /* Pods */,
+				F8060F8F57D4C961C8982FFB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +164,15 @@
 				CBAB96C123B280EB000ADCF4 /* Info.plist */,
 			);
 			path = iOSHTTPConnectTests;
+			sourceTree = "<group>";
+		};
+		F8060F8F57D4C961C8982FFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				704BFFD86D61AEC31EDB252C /* Pods_iOSHTTPConnect.framework */,
+				BECD81852EC45FE1A3B3DEF2 /* Pods_iOSHTTPConnect_iOSHTTPConnectTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -479,6 +512,7 @@
 		};
 		CBAB96C623B280EB000ADCF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 457ECB31AB82C5E547B446A2 /* Pods-iOSHTTPConnect.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
@@ -507,6 +541,7 @@
 		};
 		CBAB96C723B280EB000ADCF4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7ED318EB47C1633305DEB8D /* Pods-iOSHTTPConnect.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
@@ -534,6 +569,7 @@
 		};
 		CBAB96C923B280EB000ADCF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2404479EBC7A8934AAAE9BE7 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
@@ -553,6 +589,7 @@
 		};
 		CBAB96CA23B280EB000ADCF4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F21FF7A558D2B7D051FEB26E /* Pods-iOSHTTPConnect-iOSHTTPConnectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
