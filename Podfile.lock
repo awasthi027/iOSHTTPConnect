@@ -1,5 +1,5 @@
 PODS:
-  - iOSReachability (0.0.1)
+  - iOSReachability (0.0.2)
 
 DEPENDENCIES:
   - "iOSReachability (from `/Users/chandrakant/Desktop/R&D/iOSReachability`)"
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "/Users/chandrakant/Desktop/R&D/iOSReachability"
 
 SPEC CHECKSUMS:
-  iOSReachability: 95a3e7d302294de0a5198b0672c9f477903dc332
+  iOSReachability: e0bd1131a9f7efa26332b1055eb48f8b17e7c3de
 
 PODFILE CHECKSUM: 0f3b92052fc9c574345d3f52fbbf88927a874b70
 
