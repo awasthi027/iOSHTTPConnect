@@ -20,6 +20,7 @@
     "tag": "0.0.1"
   },
   "source_files": "iOSReachability/**/*.{swift}",
+  "exclude_files": "iOSReachability/**/*.plist",
   "swift_versions": "5.0",
   "swift_version": "5.0"
 }
