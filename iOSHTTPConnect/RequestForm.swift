@@ -18,7 +18,7 @@ public struct RequestForm {
         self.requestService = service
         self.requestAPI = api
         self.postDict = postParam
-       self.methodType = methodType
+        self.methodType = methodType
     }
     
 }

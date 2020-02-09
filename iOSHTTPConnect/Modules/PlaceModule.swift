@@ -20,21 +20,25 @@ class PlaceModule: BaseModule {
     
     override internal func processRequest(requestForm: RequestForm, completeRequest: @escaping (_ result: Result<Data>) -> Void)  {
         super.processRequest(requestForm: requestForm) { (result) in
-        }
-        switch requestForm.methodType {
-        case .eGet:
-            self.processGetRequest(requestForm: requestForm) { (result) in
+            if let _ = result.error {
                 completeRequest(result)
+                return
             }
-            break
-        case .ePost:
-            break
-        case .ePatch:
-            break
-        case .ePut:
-            break
-        case .eDelete:
-            break
+            switch requestForm.methodType {
+            case .eGet:
+                self.processGetRequest(requestForm: requestForm) { (result) in
+                    completeRequest(result)
+                }
+                break
+            case .ePost:
+                break
+            case .ePatch:
+                break
+            case .ePut:
+                break
+            case .eDelete:
+                break
+            }
         }
     }
 }

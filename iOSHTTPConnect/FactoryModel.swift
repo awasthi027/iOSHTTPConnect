@@ -13,6 +13,7 @@ public enum RequestServiceModuleType: Int {
      case ePhotos
      case ePlaces
      case eMyAccount
+     case eMovieInfo
 }
 extension RequestServiceModuleType: CaseIterable { }
 
@@ -26,6 +27,7 @@ extension RequestServiceModuleType {
         case .ePhotos: return PhotoModule()
         case .ePlaces: return PlaceModule()
         case .eMyAccount: return MyAccountModule()
+        case .eMovieInfo: return MovieInfoModule()
         }
     }
     var moduleBaseURL: String {
@@ -34,6 +36,7 @@ extension RequestServiceModuleType {
         case .ePhotos: return RequestInviromentBaseURL.requestInvBaseURL.prettyURL(module: .ePhotos)
         case .ePlaces: return RequestInviromentBaseURL.requestInvBaseURL.prettyURL(module: .ePlaces)
         case .eMyAccount: return RequestInviromentBaseURL.requestInvBaseURL.prettyURL(module: .eMyAccount)
+        case .eMovieInfo: return RequestInviromentBaseURL.requestInvBaseURL.prettyURL(module: .eMovieInfo)
             }
         }
 }

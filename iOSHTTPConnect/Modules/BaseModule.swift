@@ -6,7 +6,7 @@
 //  Copyright © 2019 NTS. All rights reserved.
 //
 import Foundation
-
+import iOSReachability
 private let ContentType = "Content-Type"
 private let ContentTypeValue = "application/json"
 
@@ -19,6 +19,11 @@ public let kResponse = "response"
 class BaseModule {
     
     internal func processRequest(requestForm: RequestForm, completeRequest: @escaping (_ result: Result<Data>) -> Void)  {
+        if ReachabilityManager.shared.isNetworkAvailable == false {
+            completeRequest(.failure(CustomErrorCode.noInternet.error(msg: "")))
+            ReachabilityManager.shared.displayInternetStatus()
+            return
+        }
     }
     
     internal func requestForData(fromUrl url: String, withMethod methodName: String, successHandler: @escaping(_ data: Data?, _ error: Error?)->Void)  {

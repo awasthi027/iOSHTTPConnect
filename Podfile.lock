@@ -1,0 +1,16 @@
+PODS:
+  - iOSReachability (0.0.1)
+
+DEPENDENCIES:
+  - "iOSReachability (from `/Users/chandrakant/Desktop/R&D/iOSReachability`)"
+
+EXTERNAL SOURCES:
+  iOSReachability:
+    :path: "/Users/chandrakant/Desktop/R&D/iOSReachability"
+
+SPEC CHECKSUMS:
+  iOSReachability: 758941cb97a96eb9183374046a0115b2bfd5ea25
+
+PODFILE CHECKSUM: 0f3b92052fc9c574345d3f52fbbf88927a874b70
+
+COCOAPODS: 1.8.4

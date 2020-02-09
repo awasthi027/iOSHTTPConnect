@@ -41,6 +41,12 @@ extension RequestInviromentBaseURL: CaseIterable {
             case .eQA:  return "https://test-api.nevaventures.com/"
             case .eProd: return "https://test-api.nevaventures.com/"
             }
+            case .eMovieInfo:
+            switch self {
+             case .eDev: return "https://api.myjson.com/bins/"
+             case .eQA:  return "https://api.myjson.com/bins/"
+             case .eProd: return "https://api.myjson.com/bins/"
+                      }
         }
         
     }

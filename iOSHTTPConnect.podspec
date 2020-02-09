@@ -8,7 +8,7 @@ s.summary = "This library will helpful to communicate with server."
 s.requires_arc = true
 
 # 2
-s.version = "0.0.3"
+s.version = "0.0.5"
 
 # 3
   s.license = { :type => 'Copyright', :text => 'Created and licensed by Ashish Awasthi. Copyright 2019 Ashish Awasthi. All rights reserved.' }
@@ -28,6 +28,8 @@ s.source       = { :git => "https://github.com/awasthi027/iOSHTTPConnect.git", :
 # 7
 
 #s.framework = "UIKit"
+
+s.dependency "iOSReachability", "~> 0.0.1"
 
 # 8
 s.source_files = "iOSHTTPConnect/**/*.{swift}"

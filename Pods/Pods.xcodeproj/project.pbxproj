@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03D5E368056535D6DE21667B43CF5A3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		0CDB8CFE6D9C759BEC8F4F9698AE8914 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		128C9E39207B376D20F794F5DC2B3D1E /* CustomNoNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D326E0D2E947466D9F4AE51DDD737C8B /* CustomNoNetworkView.swift */; };
+		3D235CF25F1675DDC7D66D8990F2634E /* Pods-iOSHTTPConnect-iOSHTTPConnectTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC93AC0371E1D53D51525355A4C6651 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests-dummy.m */; };
+		428884DFB85B8C8BD0768AD1420DB0A4 /* Pods-iOSHTTPConnect-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3057A2E3882345A22BD3A08141AAC60 /* Pods-iOSHTTPConnect-dummy.m */; };
+		6D6E0160651D6484B9D993547C586316 /* Pods-iOSHTTPConnect-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20F1761A26674C738455CF7695D6C646 /* Pods-iOSHTTPConnect-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DF20BCBB80B1B4DAD24C7883B251D5C /* Pods-iOSHTTPConnect-iOSHTTPConnectTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5C7C8EE31A9DEB385904D951D244205 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E8B8DA6A5E598C4E4D6D48ABB3B42B9 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71279E8B3227D881ABAFCF4E28753BD /* ReachabilityManager.swift */; };
+		9D6D11B75E938BFC80373864CAE346D5 /* iOSReachability-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B43B15AAA1194A5C043B044406EBDD7 /* iOSReachability-dummy.m */; };
+		AD8F0B1DA6AC071DC20A926BC31E13FA /* iOSReachability-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B92B6ECB786ABF8AA9DD6127445733ED /* iOSReachability-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B5068A2671203634D9FFC72B64F6BE /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF74215697DABBDC01E00093F55DD9C2 /* Reachability.swift */; };
+		FBE899160315DBC640C8FD9B9B24129E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6ED27D8AB9C5A550BFAB09DB0A82552C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 594C149E83D7FCA6CEA382C87A89898F;
+			remoteInfo = iOSReachability;
+		};
+		E43A0BF0519487D4A14F31648ADC2133 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 594C149E83D7FCA6CEA382C87A89898F;
+			remoteInfo = iOSReachability;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		052DC03DA073B3D1E3E6E7BEAFE29773 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iOSHTTPConnect-iOSHTTPConnectTests.modulemap"; sourceTree = "<group>"; };
+		0EFD023A97F7F17AC22D353FC5279DEC /* Pods-iOSHTTPConnect-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOSHTTPConnect-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1410A4E3AFCB20EA5FA4086E8DC96398 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOSHTTPConnect-iOSHTTPConnectTests-frameworks.sh"; sourceTree = "<group>"; };
+		154C8E034A381ECD4F71731841DB3053 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOSHTTPConnect-iOSHTTPConnectTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		17542C4313A2DC8C32D1E18D35858476 /* iOSReachability-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "iOSReachability-Info.plist"; sourceTree = "<group>"; };
+		1CEE874EB7305C5CF4CC0D48BB063C0A /* Pods-iOSHTTPConnect.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iOSHTTPConnect.modulemap"; sourceTree = "<group>"; };
+		20F1761A26674C738455CF7695D6C646 /* Pods-iOSHTTPConnect-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOSHTTPConnect-umbrella.h"; sourceTree = "<group>"; };
+		24ED948B054D5755F7AE223EE18A0011 /* Pods-iOSHTTPConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSHTTPConnect.release.xcconfig"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		37C1BE3B0763E20C462C4214AF10C077 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		46EB26BD94092B5C38480B647A283129 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOSHTTPConnect-iOSHTTPConnectTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5B43B15AAA1194A5C043B044406EBDD7 /* iOSReachability-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iOSReachability-dummy.m"; sourceTree = "<group>"; };
+		81841B5968E2290C50DF284DCDD1BD5E /* Pods-iOSHTTPConnect-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOSHTTPConnect-acknowledgements.plist"; sourceTree = "<group>"; };
+		82FE9440729EDF44693F089E900C753F /* Pods-iOSHTTPConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSHTTPConnect.debug.xcconfig"; sourceTree = "<group>"; };
+		889A6D9A533978DCA51FCDCC2AC21DE9 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOSHTTPConnect-iOSHTTPConnectTests-Info.plist"; sourceTree = "<group>"; };
+		8EB49FF69C44F57F82443971A4CFA933 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSHTTPConnect-iOSHTTPConnectTests.release.xcconfig"; sourceTree = "<group>"; };
+		95C1BCAA777952C319ACE3EDFA5B2786 /* iOSReachability.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = iOSReachability.modulemap; sourceTree = "<group>"; };
+		95E4575B88B2C7FC3EEE56C1359DB0BD /* iOSReachability.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = iOSReachability.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AA084F705EC0FDF59796B3BEB622E369 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSHTTPConnect-iOSHTTPConnectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ADB2DF78E90247F31F584D609D10EC9B /* iOSReachability.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iOSReachability.xcconfig; sourceTree = "<group>"; };
+		B92B6ECB786ABF8AA9DD6127445733ED /* iOSReachability-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSReachability-umbrella.h"; sourceTree = "<group>"; };
+		C13D7C7736F685692FD227B088E3E561 /* Pods_iOSHTTPConnect_iOSHTTPConnectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iOSHTTPConnect_iOSHTTPConnectTests.framework; path = "Pods-iOSHTTPConnect-iOSHTTPConnectTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C88F348B42DC6A5F2445052B89C9A328 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		CDC93AC0371E1D53D51525355A4C6651 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOSHTTPConnect-iOSHTTPConnectTests-dummy.m"; sourceTree = "<group>"; };
+		D1C5B9C9210F9A113192690EE98623EB /* iOSReachability-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSReachability-prefix.pch"; sourceTree = "<group>"; };
+		D326E0D2E947466D9F4AE51DDD737C8B /* CustomNoNetworkView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomNoNetworkView.swift; sourceTree = "<group>"; };
+		D71279E8B3227D881ABAFCF4E28753BD /* ReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReachabilityManager.swift; path = iOSReachability/ReachabilityManager.swift; sourceTree = "<group>"; };
+		DF74215697DABBDC01E00093F55DD9C2 /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = iOSReachability/Reachability.swift; sourceTree = "<group>"; };
+		E5C7C8EE31A9DEB385904D951D244205 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOSHTTPConnect-iOSHTTPConnectTests-umbrella.h"; sourceTree = "<group>"; };
+		E8212D763893DCD0FD1793853F4C80D7 /* Pods_iOSHTTPConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iOSHTTPConnect.framework; path = "Pods-iOSHTTPConnect.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3057A2E3882345A22BD3A08141AAC60 /* Pods-iOSHTTPConnect-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOSHTTPConnect-dummy.m"; sourceTree = "<group>"; };
+		F34519E59E9676A096B9802B5D0E88C7 /* Pods-iOSHTTPConnect-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOSHTTPConnect-Info.plist"; sourceTree = "<group>"; };
+		F7CAA80938D4A287C2F5B9FA34F6425C /* iOSReachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = iOSReachability.framework; path = iOSReachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BDEFDAE895EBA6B64D1EEC2679D4679 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03D5E368056535D6DE21667B43CF5A3F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D29B2B3205AB81110BD18C04BC2B74A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CDB8CFE6D9C759BEC8F4F9698AE8914 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F2227C726C602FC98B86470A87AE473 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE899160315DBC640C8FD9B9B24129E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		090FCDA8F835086DAED3A95F809A994A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				95C1BCAA777952C319ACE3EDFA5B2786 /* iOSReachability.modulemap */,
+				ADB2DF78E90247F31F584D609D10EC9B /* iOSReachability.xcconfig */,
+				5B43B15AAA1194A5C043B044406EBDD7 /* iOSReachability-dummy.m */,
+				17542C4313A2DC8C32D1E18D35858476 /* iOSReachability-Info.plist */,
+				D1C5B9C9210F9A113192690EE98623EB /* iOSReachability-prefix.pch */,
+				B92B6ECB786ABF8AA9DD6127445733ED /* iOSReachability-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../iOSHTTPConnect/Pods/Target Support Files/iOSReachability";
+			sourceTree = "<group>";
+		};
+		19860846E6580E773AFC68736E63639F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				D326E0D2E947466D9F4AE51DDD737C8B /* CustomNoNetworkView.swift */,
+			);
+			name = view;
+			path = iOSReachability/view;
+			sourceTree = "<group>";
+		};
+		2B3C438597FDF71902149A682111DC35 /* iOSReachability */ = {
+			isa = PBXGroup;
+			children = (
+				DF74215697DABBDC01E00093F55DD9C2 /* Reachability.swift */,
+				D71279E8B3227D881ABAFCF4E28753BD /* ReachabilityManager.swift */,
+				D9E2A42D347C2F49F9D593F60271BEB7 /* Pod */,
+				090FCDA8F835086DAED3A95F809A994A /* Support Files */,
+				19860846E6580E773AFC68736E63639F /* view */,
+			);
+			name = iOSReachability;
+			path = "/Users/chandrakant/Desktop/R&D/iOSReachability";
+			sourceTree = "<absolute>";
+		};
+		41BDF65891E09ABAD548869F62D16589 /* Pods-iOSHTTPConnect */ = {
+			isa = PBXGroup;
+			children = (
+				1CEE874EB7305C5CF4CC0D48BB063C0A /* Pods-iOSHTTPConnect.modulemap */,
+				0EFD023A97F7F17AC22D353FC5279DEC /* Pods-iOSHTTPConnect-acknowledgements.markdown */,
+				81841B5968E2290C50DF284DCDD1BD5E /* Pods-iOSHTTPConnect-acknowledgements.plist */,
+				F3057A2E3882345A22BD3A08141AAC60 /* Pods-iOSHTTPConnect-dummy.m */,
+				F34519E59E9676A096B9802B5D0E88C7 /* Pods-iOSHTTPConnect-Info.plist */,
+				20F1761A26674C738455CF7695D6C646 /* Pods-iOSHTTPConnect-umbrella.h */,
+				82FE9440729EDF44693F089E900C753F /* Pods-iOSHTTPConnect.debug.xcconfig */,
+				24ED948B054D5755F7AE223EE18A0011 /* Pods-iOSHTTPConnect.release.xcconfig */,
+			);
+			name = "Pods-iOSHTTPConnect";
+			path = "Target Support Files/Pods-iOSHTTPConnect";
+			sourceTree = "<group>";
+		};
+		5E66CC2D35C00B5910118FA03F4251AC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				41BDF65891E09ABAD548869F62D16589 /* Pods-iOSHTTPConnect */,
+				935B09001EF887E3351D5BBBC6B53F07 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7ACD6FD438ECF5364AEBD72BBF687A22 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B3C438597FDF71902149A682111DC35 /* iOSReachability */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		935B09001EF887E3351D5BBBC6B53F07 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests */ = {
+			isa = PBXGroup;
+			children = (
+				052DC03DA073B3D1E3E6E7BEAFE29773 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests.modulemap */,
+				154C8E034A381ECD4F71731841DB3053 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests-acknowledgements.markdown */,
+				46EB26BD94092B5C38480B647A283129 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests-acknowledgements.plist */,
+				CDC93AC0371E1D53D51525355A4C6651 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests-dummy.m */,
+				1410A4E3AFCB20EA5FA4086E8DC96398 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests-frameworks.sh */,
+				889A6D9A533978DCA51FCDCC2AC21DE9 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests-Info.plist */,
+				E5C7C8EE31A9DEB385904D951D244205 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests-umbrella.h */,
+				AA084F705EC0FDF59796B3BEB622E369 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests.debug.xcconfig */,
+				8EB49FF69C44F57F82443971A4CFA933 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests.release.xcconfig */,
+			);
+			name = "Pods-iOSHTTPConnect-iOSHTTPConnectTests";
+			path = "Target Support Files/Pods-iOSHTTPConnect-iOSHTTPConnectTests";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				7ACD6FD438ECF5364AEBD72BBF687A22 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				D3EC9CE8BAB2F85D045131DC3D97DB90 /* Products */,
+				5E66CC2D35C00B5910118FA03F4251AC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3EC9CE8BAB2F85D045131DC3D97DB90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7CAA80938D4A287C2F5B9FA34F6425C /* iOSReachability.framework */,
+				E8212D763893DCD0FD1793853F4C80D7 /* Pods_iOSHTTPConnect.framework */,
+				C13D7C7736F685692FD227B088E3E561 /* Pods_iOSHTTPConnect_iOSHTTPConnectTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9E2A42D347C2F49F9D593F60271BEB7 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				95E4575B88B2C7FC3EEE56C1359DB0BD /* iOSReachability.podspec */,
+				C88F348B42DC6A5F2445052B89C9A328 /* LICENSE */,
+				37C1BE3B0763E20C462C4214AF10C077 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1BC2A1A5ABD43D5C8897212C15AAF46A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D6E0160651D6484B9D993547C586316 /* Pods-iOSHTTPConnect-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D0A1F012AA60C27E4AEC88FF82C6E4A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD8F0B1DA6AC071DC20A926BC31E13FA /* iOSReachability-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2B5C2AABD305CD0AFDEC2C6314FFFC3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF20BCBB80B1B4DAD24C7883B251D5C /* Pods-iOSHTTPConnect-iOSHTTPConnectTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		447A3E32DFE11085324D67E1B2C4CD5E /* Pods-iOSHTTPConnect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DA16466D9965748B7088630DA1EAEC3 /* Build configuration list for PBXNativeTarget "Pods-iOSHTTPConnect" */;
+			buildPhases = (
+				1BC2A1A5ABD43D5C8897212C15AAF46A /* Headers */,
+				B106540E48A7F3B93837B63A8CB4950C /* Sources */,
+				2BDEFDAE895EBA6B64D1EEC2679D4679 /* Frameworks */,
+				5206C27057C41661708B3221AC443348 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				000B64E99933D9C2FB8F2D47232801C3 /* PBXTargetDependency */,
+			);
+			name = "Pods-iOSHTTPConnect";
+			productName = "Pods-iOSHTTPConnect";
+			productReference = E8212D763893DCD0FD1793853F4C80D7 /* Pods_iOSHTTPConnect.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		594C149E83D7FCA6CEA382C87A89898F /* iOSReachability */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD6650C085FFBC90653E6DC5BCD6AEA8 /* Build configuration list for PBXNativeTarget "iOSReachability" */;
+			buildPhases = (
+				3D0A1F012AA60C27E4AEC88FF82C6E4A /* Headers */,
+				9D81BC00E5ED10DC0FF49390F2D7EDE9 /* Sources */,
+				7D29B2B3205AB81110BD18C04BC2B74A /* Frameworks */,
+				14E405CECDF908881B3D23F52FFDB64A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSReachability;
+			productName = iOSReachability;
+			productReference = F7CAA80938D4A287C2F5B9FA34F6425C /* iOSReachability.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		95D20A074C9C16505D2FA3CC8DA0D294 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1979863B0D397BBDD7469487B3E092F /* Build configuration list for PBXNativeTarget "Pods-iOSHTTPConnect-iOSHTTPConnectTests" */;
+			buildPhases = (
+				A2B5C2AABD305CD0AFDEC2C6314FFFC3 /* Headers */,
+				73CA7BA16DE4C496AB3BFB2584F2D7E5 /* Sources */,
+				8F2227C726C602FC98B86470A87AE473 /* Frameworks */,
+				9B5F468FEFB4B65174EF22BBE7011944 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				905805D9DEB8D871E9B26544AA378843 /* PBXTargetDependency */,
+			);
+			name = "Pods-iOSHTTPConnect-iOSHTTPConnectTests";
+			productName = "Pods-iOSHTTPConnect-iOSHTTPConnectTests";
+			productReference = C13D7C7736F685692FD227B088E3E561 /* Pods_iOSHTTPConnect_iOSHTTPConnectTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = D3EC9CE8BAB2F85D045131DC3D97DB90 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				594C149E83D7FCA6CEA382C87A89898F /* iOSReachability */,
+				447A3E32DFE11085324D67E1B2C4CD5E /* Pods-iOSHTTPConnect */,
+				95D20A074C9C16505D2FA3CC8DA0D294 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14E405CECDF908881B3D23F52FFDB64A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5206C27057C41661708B3221AC443348 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B5F468FEFB4B65174EF22BBE7011944 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		73CA7BA16DE4C496AB3BFB2584F2D7E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D235CF25F1675DDC7D66D8990F2634E /* Pods-iOSHTTPConnect-iOSHTTPConnectTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D81BC00E5ED10DC0FF49390F2D7EDE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				128C9E39207B376D20F794F5DC2B3D1E /* CustomNoNetworkView.swift in Sources */,
+				9D6D11B75E938BFC80373864CAE346D5 /* iOSReachability-dummy.m in Sources */,
+				E6B5068A2671203634D9FFC72B64F6BE /* Reachability.swift in Sources */,
+				7E8B8DA6A5E598C4E4D6D48ABB3B42B9 /* ReachabilityManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B106540E48A7F3B93837B63A8CB4950C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				428884DFB85B8C8BD0768AD1420DB0A4 /* Pods-iOSHTTPConnect-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		000B64E99933D9C2FB8F2D47232801C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iOSReachability;
+			target = 594C149E83D7FCA6CEA382C87A89898F /* iOSReachability */;
+			targetProxy = 6ED27D8AB9C5A550BFAB09DB0A82552C /* PBXContainerItemProxy */;
+		};
+		905805D9DEB8D871E9B26544AA378843 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iOSReachability;
+			target = 594C149E83D7FCA6CEA382C87A89898F /* iOSReachability */;
+			targetProxy = E43A0BF0519487D4A14F31648ADC2133 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1BCB8C3B1F8DFB6A68FBC9B83FA3954E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24ED948B054D5755F7AE223EE18A0011 /* Pods-iOSHTTPConnect.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iOSHTTPConnect/Pods-iOSHTTPConnect-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iOSHTTPConnect/Pods-iOSHTTPConnect.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4C12465FD9FE29E23C5A341FDB51CD1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EB49FF69C44F57F82443971A4CFA933 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iOSHTTPConnect-iOSHTTPConnectTests/Pods-iOSHTTPConnect-iOSHTTPConnectTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iOSHTTPConnect-iOSHTTPConnectTests/Pods-iOSHTTPConnect-iOSHTTPConnectTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5A5565489D1B93AAD204006B4B7DE8E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADB2DF78E90247F31F584D609D10EC9B /* iOSReachability.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iOSReachability/iOSReachability-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iOSReachability/iOSReachability-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/iOSReachability/iOSReachability.modulemap";
+				PRODUCT_MODULE_NAME = iOSReachability;
+				PRODUCT_NAME = iOSReachability;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		933266CD74C72FCDAAD18C58751011A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA084F705EC0FDF59796B3BEB622E369 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iOSHTTPConnect-iOSHTTPConnectTests/Pods-iOSHTTPConnect-iOSHTTPConnectTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iOSHTTPConnect-iOSHTTPConnectTests/Pods-iOSHTTPConnect-iOSHTTPConnectTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E7455150158566A13C1C100DB09A24AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82FE9440729EDF44693F089E900C753F /* Pods-iOSHTTPConnect.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iOSHTTPConnect/Pods-iOSHTTPConnect-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iOSHTTPConnect/Pods-iOSHTTPConnect.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F730D606B22F74CFE0DBAAA5EDB17F6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADB2DF78E90247F31F584D609D10EC9B /* iOSReachability.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iOSReachability/iOSReachability-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iOSReachability/iOSReachability-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/iOSReachability/iOSReachability.modulemap";
+				PRODUCT_MODULE_NAME = iOSReachability;
+				PRODUCT_NAME = iOSReachability;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DA16466D9965748B7088630DA1EAEC3 /* Build configuration list for PBXNativeTarget "Pods-iOSHTTPConnect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7455150158566A13C1C100DB09A24AD /* Debug */,
+				1BCB8C3B1F8DFB6A68FBC9B83FA3954E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196DFA3E4A09A28224918543529A1885 /* Debug */,
+				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1979863B0D397BBDD7469487B3E092F /* Build configuration list for PBXNativeTarget "Pods-iOSHTTPConnect-iOSHTTPConnectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				933266CD74C72FCDAAD18C58751011A9 /* Debug */,
+				4C12465FD9FE29E23C5A341FDB51CD1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD6650C085FFBC90653E6DC5BCD6AEA8 /* Build configuration list for PBXNativeTarget "iOSReachability" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F730D606B22F74CFE0DBAAA5EDB17F6F /* Debug */,
+				5A5565489D1B93AAD204006B4B7DE8E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

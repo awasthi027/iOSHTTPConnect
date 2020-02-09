@@ -3,25 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB1C3C9023B48B7700AE370E /* MyAccountModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1C3C8F23B48B7700AE370E /* MyAccountModule.swift */; };
+		34D8ADB0AF8C816BFBFE6CBB /* Pods_iOSHTTPConnect_iOSHTTPConnectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A6F375617F8160B9C2D822E /* Pods_iOSHTTPConnect_iOSHTTPConnectTests.framework */; };
+		859F2668862A106490500A02 /* Pods_iOSHTTPConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657D073786D692825F376797 /* Pods_iOSHTTPConnect.framework */; };
 		CB1C3C9223B493F600AE370E /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1C3C9123B493F600AE370E /* RequestMethod.swift */; };
+		CB74059923EF08EA00250881 /* PhotoModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74059423EF08EA00250881 /* PhotoModule.swift */; };
+		CB74059A23EF08EA00250881 /* MovieInfoModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74059523EF08EA00250881 /* MovieInfoModule.swift */; };
+		CB74059B23EF08EA00250881 /* MyAccountModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74059623EF08EA00250881 /* MyAccountModule.swift */; };
+		CB74059C23EF08EA00250881 /* BaseModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74059723EF08EA00250881 /* BaseModule.swift */; };
+		CB74059D23EF08EA00250881 /* PlaceModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74059823EF08EA00250881 /* PlaceModule.swift */; };
 		CBAB96BB23B280EB000ADCF4 /* iOSHTTPConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBAB96B123B280EB000ADCF4 /* iOSHTTPConnect.framework */; };
 		CBAB96C023B280EB000ADCF4 /* iOSHTTPConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB96BF23B280EB000ADCF4 /* iOSHTTPConnectTests.swift */; };
 		CBAB96C223B280EB000ADCF4 /* iOSHTTPConnect.h in Headers */ = {isa = PBXBuildFile; fileRef = CBAB96B423B280EB000ADCF4 /* iOSHTTPConnect.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CBAB96D823B2812A000ADCF4 /* BaseModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB96CB23B2812A000ADCF4 /* BaseModule.swift */; };
 		CBAB96D923B2812A000ADCF4 /* APIRequestInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB96CC23B2812A000ADCF4 /* APIRequestInfo.swift */; };
 		CBAB96DA23B2812A000ADCF4 /* ErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB96CD23B2812A000ADCF4 /* ErrorCode.swift */; };
 		CBAB96DB23B2812A000ADCF4 /* GenericOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB96CE23B2812A000ADCF4 /* GenericOperation.swift */; };
 		CBAB96DC23B2812A000ADCF4 /* LogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB96CF23B2812A000ADCF4 /* LogHelper.swift */; };
 		CBAB96DD23B2812A000ADCF4 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB96D023B2812A000ADCF4 /* ModelController.swift */; };
-		CBAB96DE23B2812A000ADCF4 /* PlaceModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB96D123B2812A000ADCF4 /* PlaceModule.swift */; };
 		CBAB96DF23B2812A000ADCF4 /* FormURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB96D223B2812A000ADCF4 /* FormURL.swift */; };
 		CBAB96E023B2812A000ADCF4 /* FactoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB96D323B2812A000ADCF4 /* FactoryModel.swift */; };
-		CBAB96E123B2812A000ADCF4 /* PhotoModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB96D423B2812A000ADCF4 /* PhotoModule.swift */; };
 		CBAB96E223B2812A000ADCF4 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB96D523B2812A000ADCF4 /* Result.swift */; };
 		CBAB96E323B2812A000ADCF4 /* RequestForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB96D623B2812A000ADCF4 /* RequestForm.swift */; };
 		CBAB96E423B2812A000ADCF4 /* BaseOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBAB96D723B2812A000ADCF4 /* BaseOperation.swift */; };
@@ -38,27 +41,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CB1C3C8F23B48B7700AE370E /* MyAccountModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountModule.swift; sourceTree = "<group>"; };
+		3A6F375617F8160B9C2D822E /* Pods_iOSHTTPConnect_iOSHTTPConnectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSHTTPConnect_iOSHTTPConnectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E45B457B6A714B00CD333B5 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSHTTPConnect-iOSHTTPConnectTests.release.xcconfig"; path = "Target Support Files/Pods-iOSHTTPConnect-iOSHTTPConnectTests/Pods-iOSHTTPConnect-iOSHTTPConnectTests.release.xcconfig"; sourceTree = "<group>"; };
+		657D073786D692825F376797 /* Pods_iOSHTTPConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSHTTPConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9280745FB36D3305DD12C3AE /* Pods-iOSHTTPConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSHTTPConnect.release.xcconfig"; path = "Target Support Files/Pods-iOSHTTPConnect/Pods-iOSHTTPConnect.release.xcconfig"; sourceTree = "<group>"; };
+		A17DD7A7FCE3662D50CE9156 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSHTTPConnect-iOSHTTPConnectTests.debug.xcconfig"; path = "Target Support Files/Pods-iOSHTTPConnect-iOSHTTPConnectTests/Pods-iOSHTTPConnect-iOSHTTPConnectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CB1C3C9123B493F600AE370E /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		CB74059423EF08EA00250881 /* PhotoModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoModule.swift; sourceTree = "<group>"; };
+		CB74059523EF08EA00250881 /* MovieInfoModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieInfoModule.swift; sourceTree = "<group>"; };
+		CB74059623EF08EA00250881 /* MyAccountModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAccountModule.swift; sourceTree = "<group>"; };
+		CB74059723EF08EA00250881 /* BaseModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModule.swift; sourceTree = "<group>"; };
+		CB74059823EF08EA00250881 /* PlaceModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceModule.swift; sourceTree = "<group>"; };
 		CBAB96B123B280EB000ADCF4 /* iOSHTTPConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSHTTPConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAB96B423B280EB000ADCF4 /* iOSHTTPConnect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSHTTPConnect.h; sourceTree = "<group>"; };
 		CBAB96B523B280EB000ADCF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBAB96BA23B280EB000ADCF4 /* iOSHTTPConnectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSHTTPConnectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBAB96BF23B280EB000ADCF4 /* iOSHTTPConnectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSHTTPConnectTests.swift; sourceTree = "<group>"; };
 		CBAB96C123B280EB000ADCF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBAB96CB23B2812A000ADCF4 /* BaseModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModule.swift; sourceTree = "<group>"; };
 		CBAB96CC23B2812A000ADCF4 /* APIRequestInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestInfo.swift; sourceTree = "<group>"; };
 		CBAB96CD23B2812A000ADCF4 /* ErrorCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorCode.swift; sourceTree = "<group>"; };
 		CBAB96CE23B2812A000ADCF4 /* GenericOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericOperation.swift; sourceTree = "<group>"; };
 		CBAB96CF23B2812A000ADCF4 /* LogHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogHelper.swift; sourceTree = "<group>"; };
 		CBAB96D023B2812A000ADCF4 /* ModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
-		CBAB96D123B2812A000ADCF4 /* PlaceModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceModule.swift; sourceTree = "<group>"; };
 		CBAB96D223B2812A000ADCF4 /* FormURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormURL.swift; sourceTree = "<group>"; };
 		CBAB96D323B2812A000ADCF4 /* FactoryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryModel.swift; sourceTree = "<group>"; };
-		CBAB96D423B2812A000ADCF4 /* PhotoModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoModule.swift; sourceTree = "<group>"; };
 		CBAB96D523B2812A000ADCF4 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		CBAB96D623B2812A000ADCF4 /* RequestForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestForm.swift; sourceTree = "<group>"; };
 		CBAB96D723B2812A000ADCF4 /* BaseOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseOperation.swift; sourceTree = "<group>"; };
+		CC92A726774266E29BB65AD1 /* Pods-iOSHTTPConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSHTTPConnect.debug.xcconfig"; path = "Target Support Files/Pods-iOSHTTPConnect/Pods-iOSHTTPConnect.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				859F2668862A106490500A02 /* Pods_iOSHTTPConnect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,18 +85,53 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBAB96BB23B280EB000ADCF4 /* iOSHTTPConnect.framework in Frameworks */,
+				34D8ADB0AF8C816BFBFE6CBB /* Pods_iOSHTTPConnect_iOSHTTPConnectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B4FD9F629746C9BABC602E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC92A726774266E29BB65AD1 /* Pods-iOSHTTPConnect.debug.xcconfig */,
+				9280745FB36D3305DD12C3AE /* Pods-iOSHTTPConnect.release.xcconfig */,
+				A17DD7A7FCE3662D50CE9156 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests.debug.xcconfig */,
+				4E45B457B6A714B00CD333B5 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		50798AF599A82506C6492558 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				657D073786D692825F376797 /* Pods_iOSHTTPConnect.framework */,
+				3A6F375617F8160B9C2D822E /* Pods_iOSHTTPConnect_iOSHTTPConnectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB74059323EF08EA00250881 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CB74059423EF08EA00250881 /* PhotoModule.swift */,
+				CB74059523EF08EA00250881 /* MovieInfoModule.swift */,
+				CB74059623EF08EA00250881 /* MyAccountModule.swift */,
+				CB74059723EF08EA00250881 /* BaseModule.swift */,
+				CB74059823EF08EA00250881 /* PlaceModule.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 		CBAB96A723B280EB000ADCF4 = {
 			isa = PBXGroup;
 			children = (
 				CBAB96B323B280EB000ADCF4 /* iOSHTTPConnect */,
 				CBAB96BE23B280EB000ADCF4 /* iOSHTTPConnectTests */,
 				CBAB96B223B280EB000ADCF4 /* Products */,
+				2B4FD9F629746C9BABC602E5 /* Pods */,
+				50798AF599A82506C6492558 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,8 +147,8 @@
 		CBAB96B323B280EB000ADCF4 /* iOSHTTPConnect */ = {
 			isa = PBXGroup;
 			children = (
+				CB74059323EF08EA00250881 /* Modules */,
 				CBAB96CC23B2812A000ADCF4 /* APIRequestInfo.swift */,
-				CBAB96CB23B2812A000ADCF4 /* BaseModule.swift */,
 				CBAB96D723B2812A000ADCF4 /* BaseOperation.swift */,
 				CBAB96CD23B2812A000ADCF4 /* ErrorCode.swift */,
 				CBAB96D323B2812A000ADCF4 /* FactoryModel.swift */,
@@ -110,9 +156,6 @@
 				CBAB96CE23B2812A000ADCF4 /* GenericOperation.swift */,
 				CBAB96CF23B2812A000ADCF4 /* LogHelper.swift */,
 				CBAB96D023B2812A000ADCF4 /* ModelController.swift */,
-				CBAB96D423B2812A000ADCF4 /* PhotoModule.swift */,
-				CBAB96D123B2812A000ADCF4 /* PlaceModule.swift */,
-				CB1C3C8F23B48B7700AE370E /* MyAccountModule.swift */,
 				CBAB96D623B2812A000ADCF4 /* RequestForm.swift */,
 				CBAB96D523B2812A000ADCF4 /* Result.swift */,
 				CBAB96B423B280EB000ADCF4 /* iOSHTTPConnect.h */,
@@ -149,6 +192,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBAB96C523B280EB000ADCF4 /* Build configuration list for PBXNativeTarget "iOSHTTPConnect" */;
 			buildPhases = (
+				D0052815FF67A358C042AFA9 /* [CP] Check Pods Manifest.lock */,
 				CBAB96AC23B280EB000ADCF4 /* Headers */,
 				CBAB96AD23B280EB000ADCF4 /* Sources */,
 				CBAB96AE23B280EB000ADCF4 /* Frameworks */,
@@ -167,9 +211,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CBAB96C823B280EB000ADCF4 /* Build configuration list for PBXNativeTarget "iOSHTTPConnectTests" */;
 			buildPhases = (
+				6F42BCDFC1338F5A4278F609 /* [CP] Check Pods Manifest.lock */,
 				CBAB96B623B280EB000ADCF4 /* Sources */,
 				CBAB96B723B280EB000ADCF4 /* Frameworks */,
 				CBAB96B823B280EB000ADCF4 /* Resources */,
+				D52C01783553927FF56CCA60 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,24 +282,89 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6F42BCDFC1338F5A4278F609 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSHTTPConnect-iOSHTTPConnectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0052815FF67A358C042AFA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSHTTPConnect-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D52C01783553927FF56CCA60 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSHTTPConnect-iOSHTTPConnectTests/Pods-iOSHTTPConnect-iOSHTTPConnectTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSHTTPConnect-iOSHTTPConnectTests/Pods-iOSHTTPConnect-iOSHTTPConnectTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSHTTPConnect-iOSHTTPConnectTests/Pods-iOSHTTPConnect-iOSHTTPConnectTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CBAB96AD23B280EB000ADCF4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB74059C23EF08EA00250881 /* BaseModule.swift in Sources */,
 				CBAB96D923B2812A000ADCF4 /* APIRequestInfo.swift in Sources */,
 				CBAB96E323B2812A000ADCF4 /* RequestForm.swift in Sources */,
 				CBAB96DC23B2812A000ADCF4 /* LogHelper.swift in Sources */,
-				CBAB96E123B2812A000ADCF4 /* PhotoModule.swift in Sources */,
-				CBAB96D823B2812A000ADCF4 /* BaseModule.swift in Sources */,
-				CBAB96DE23B2812A000ADCF4 /* PlaceModule.swift in Sources */,
 				CBAB96DD23B2812A000ADCF4 /* ModelController.swift in Sources */,
 				CBAB96DA23B2812A000ADCF4 /* ErrorCode.swift in Sources */,
 				CBAB96DB23B2812A000ADCF4 /* GenericOperation.swift in Sources */,
+				CB74059D23EF08EA00250881 /* PlaceModule.swift in Sources */,
 				CBAB96E423B2812A000ADCF4 /* BaseOperation.swift in Sources */,
 				CBAB96E023B2812A000ADCF4 /* FactoryModel.swift in Sources */,
-				CB1C3C9023B48B7700AE370E /* MyAccountModule.swift in Sources */,
+				CB74059923EF08EA00250881 /* PhotoModule.swift in Sources */,
+				CB74059A23EF08EA00250881 /* MovieInfoModule.swift in Sources */,
 				CBAB96DF23B2812A000ADCF4 /* FormURL.swift in Sources */,
+				CB74059B23EF08EA00250881 /* MyAccountModule.swift in Sources */,
 				CB1C3C9223B493F600AE370E /* RequestMethod.swift in Sources */,
 				CBAB96E223B2812A000ADCF4 /* Result.swift in Sources */,
 			);
@@ -400,7 +511,9 @@
 		};
 		CBAB96C623B280EB000ADCF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC92A726774266E29BB65AD1 /* Pods-iOSHTTPConnect.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -427,7 +540,9 @@
 		};
 		CBAB96C723B280EB000ADCF4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9280745FB36D3305DD12C3AE /* Pods-iOSHTTPConnect.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -453,8 +568,9 @@
 		};
 		CBAB96C923B280EB000ADCF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A17DD7A7FCE3662D50CE9156 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3847847G6R;
 				INFOPLIST_FILE = iOSHTTPConnectTests/Info.plist;
@@ -472,8 +588,9 @@
 		};
 		CBAB96CA23B280EB000ADCF4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E45B457B6A714B00CD333B5 /* Pods-iOSHTTPConnect-iOSHTTPConnectTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3847847G6R;
 				INFOPLIST_FILE = iOSHTTPConnectTests/Info.plist;
