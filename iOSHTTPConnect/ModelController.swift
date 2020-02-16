@@ -37,7 +37,12 @@ extension ModelController {
                     }
                 }
             }else {
-                completeRequest(.failure(CustomErrorCode.noResponse.error(msg: "")))
+                if let error = genericOperation.result?.error {
+                  completeRequest(.failure(error))
+                }else {
+                  completeRequest(.failure(CustomErrorCode.noResponse.error(msg: "")))
+                }
+               
             }
         }
         

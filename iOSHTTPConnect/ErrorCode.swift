@@ -33,7 +33,7 @@ extension CustomErrorCode {
          case .json: return NSError.init(domain: "AppDomain", code: CustomErrorCode.json.rawValue, userInfo:["message": CustomErrorCode.json.readbleMessage + msg])
           case .noResponse: return NSError.init(domain: "AppDomain", code: CustomErrorCode.noResponse.rawValue, userInfo:["message": CustomErrorCode.noResponse.readbleMessage + msg])
          case .noError: return NSError.init(domain: "AppDomain", code: CustomErrorCode.noError.rawValue, userInfo:["message": CustomErrorCode.noError.readbleMessage + msg])
-         case .noInternet: return NSError.init(domain: "AppDomain", code: CustomErrorCode.noInternet.rawValue, userInfo:["message": CustomErrorCode.noError.readbleMessage + msg])
+         case .noInternet: return NSError.init(domain: "AppDomain", code: CustomErrorCode.noInternet.rawValue, userInfo:["message": CustomErrorCode.noInternet.readbleMessage + msg])
         }
     }
 }
